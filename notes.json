@@ -1,0 +1,20 @@
+[
+    {
+        "id": "note_6ab1a9dbdd1140.62971556",
+        "title": "Encontro dos Amigos",
+        "description": "O gui e o vini vai pocar um baile",
+        "category": "Evento",
+        "datetime": "2026-10-10T15:00",
+        "status": "Pendente",
+        "createdAt": "2026-09-21 22:04:11"
+    },
+    {
+        "id": "note_6ab1aa88df5d46.13824210",
+        "title": "Grupo do Projeto de Extensão",
+        "description": "Criar o grupo de extensão",
+        "category": "Tarefa",
+        "datetime": "2026-02-11T06:59",
+        "status": "Atrasada",
+        "createdAt": "2026-09-21 22:07:04"
+    }
+]
