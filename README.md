@@ -34,22 +34,24 @@ Se aparecer a versão, siga para o passo a passo. Se não, instale o PHP:
 ```bash
    cd caminho/para/AgendaPHP
 ```
- 
-2. **Inicie o servidor.** Use este comando, que já ajusta o fuso horário (veja a nota abaixo):
+
+2. **Entre na pasta `app/` , pois é onde se encontra o arquivo index.
 ```bash
-   php -d date.timezone=America/Fortaleza -S localhost:8000
+   cd app/
 ```
  
-3. **Abra no navegador:**
+3. **Inicie o servidor.**
+```bash
+   php -S localhost:8000
+```
+ 
+4. **Abra no navegador:**
 ```text
    http://localhost:8000/app/index.html
 ```
  
-4. **Para parar o servidor**, volte ao terminal e pressione `Ctrl + C`.
-> **Rode na pasta `AgendaPHP`, não dentro de `app/`.** A página busca o ícone da aba em `../imgs/favicon.ico`. Se o servidor for iniciado dentro de `app/`, o aplicativo funciona, mas o ícone não aparece.
- 
-> **Por que o fuso horário?** O PHP usa o fuso do servidor para decidir se uma tarefa está atrasada. Se o fuso for UTC (o padrão em muitas instalações), uma tarefa marcada para daqui a 1 ou 2 horas em Fortaleza já aparece como **Atrasada**. O parâmetro `-d date.timezone=America/Fortaleza` corrige isso sem mudar o código. Se você mora em outro fuso, troque o valor.
- 
+5. **Para parar o servidor**, volte ao terminal e pressione `Ctrl + C`.
+
 ### Alternativa: XAMPP (Windows)
  
 1. Instale o [XAMPP](https://www.apachefriends.org).
